@@ -134,3 +134,53 @@ print(x*10)
 a="*"
 print("Output for task-17.......................................")
 print(a*10)
+
+#Part 9 — Case Conversion
+#Task 18
+x="python programming language"
+print("Output for task-18.......................................")
+print("upper:-",x.upper())
+print("lower:-",x.lower())
+print("capatalize:-",x.capitalize())
+print("title:-",x.title())
+print("swapcase:-",x.swapcase())
+
+#Task 19 — Case-Insensitive Comparison
+x="Python"
+y="python"
+print("Output for task-19.......................................")
+print(x==y)
+x=x.lower()
+print(x==y)
+
+#Part 10 — Searching
+#Task 20 — Membership
+x="Python is a programming language"
+print("Output for task-20.......................................")
+print("Python" in x)
+print("programming" in x)
+print("Java" in x)
+print("language" in x)
+
+#Task 21 — find()
+x="Python is a programming language"
+print("Output for task-21.......................................")
+print(x.find("Python"))
+print(x.find("programming"))
+print(x.find("language"))
+print(x.find("Java"))
+
+#Task 22 — index()
+x="Python is a programming language"
+print("Output for task-22.......................................")
+print(x.index("Python"))
+print(x.index("programming"))
+print(x.index("language"))
+print("print(x.index(Java)) show the :-ValueError: substring not found")
+
+#Task 23 — Count Characters
+a="banana"
+print("Output for task-23.......................................")
+print(a.count("a"))
+print(a.count("n"))
+print(a.count("b"))
