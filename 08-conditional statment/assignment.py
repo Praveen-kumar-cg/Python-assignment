@@ -196,3 +196,119 @@ if num != 0:
         print("The number is negative.")
 else:
     print("The number is zero.")
+
+#Q=21
+print("Output for question-21..............................................................")
+age=int(input("enter your age:-"))
+marks=int(input("enter your marks:-"))
+if age>=18:
+    if marks>=40:
+        print("Eligible")
+    else:
+        print("marks are low but age fullfil")
+else:
+    print("not eligible..")
+
+
+#Q=22
+print("Output for question-22..............................................................")
+num=int(input("enter number:-"))
+if num<10:
+    print("special number")
+elif num>100:
+        print("special number")
+else:
+    print("bitween 10 and 100 ")
+
+
+#Q=23
+print("Output for question-23..............................................................")
+age=int(input("enter your age:-"))
+has_id=input("enter True or False:-").capitalize()
+if age>=18:
+    if has_id=="True":
+        print("Allowed!!!")
+    else:
+        print("id dont match")
+else:
+    print("not allowed???")
+
+
+#Q=24
+print("Output for question-24..............................................................")
+x=int(input("enter 1st number:-"))
+y=int(input("enter 2nd number:-"))
+if x>10:
+    if y>10:
+        print("both are greatre than  10")
+    else:
+        print("y is less than 10")
+elif x<=10:
+    if y>10:
+        print("x is less than 10 but y is greatre than 10")
+    else:
+        print("y is less than 10")
+else:
+    print("both are less than 10")
+
+#Q=25
+# print("Output for question-25..............................................................")
+x=int(input("enter an number:-"))
+if x<=0:
+    if x==0:
+        print("zero")
+    else:
+        print("negative number")
+elif x>=100:
+    if x==100:
+        print("excect 100")
+    else:
+        print("number is greatre than 100")
+else:
+    print("number is bitween the 0 and 100")
+
+#Q=26
+print("Output for question-26..............................................................")
+is_closed = False
+if not is_closed: 
+    print("Open")
+
+#Q=27
+print("Output for question-27..............................................................")
+num=int(input("enter number:-"))
+if num<50 and num>10:
+    print("number is bitween 10 and 50")
+else:
+    print("other number")
+
+
+#Q=28
+print("Output for question-28..............................................................")
+number = int(input("Enter a number: "))
+if number < 10 or number > 50:
+    print("Outside the range")
+else:
+    print("Inside the range")
+
+#Q=29
+print("Output for question-29..............................................................")
+is_student=True
+has_id=True
+has_ticket=True
+if is_student==True:
+    if has_id==True:
+        if is_student==True:
+            print("allowed")
+else:
+    print("not allowed")
+
+
+#Q=30
+print("Output for question-30..............................................................")
+age=int(input("enter your age:-"))
+marks=int(input("enter your marks:-"))
+has_id=True
+if age>=18 and marks>40 and has_id==True:
+    print("eligible")
+else:
+    print("not eligible")
