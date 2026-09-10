@@ -198,4 +198,47 @@ for i in name_ch:
 print("the upper case leter is",count)
 
 
+#26
+print("Output for question-26.............................................................")
+for i in range(3):
+    for j in range(4):
+        print("*",end="")
+    print()
 
+
+#27
+print("Output for question-27.............................................................")
+for i in range(4):
+    for j in range(5):
+        print("*",end="")
+    print()
+
+
+#28
+print("Output for question-28.............................................................")
+for i in range(6):
+    for j in range(1,i+1):
+        print("*",end="")
+    print()
+
+#29
+print("Output for question-29.............................................................")
+for i in range(6):
+    for j in range(1,i+1):
+        print(j,end="")
+    print()
+
+#30
+print("Output for question-30.............................................................")
+for i in range(1,6):
+    for j in range(1,6):
+        print(i*j,end="\t")
+    print()
+
+
+#Final Practice Challenge
+x=int(input("enter an number for last row:-"))
+for i in range(x):
+    for j in range(i+1):
+        print(j+1,end="")
+    print()
