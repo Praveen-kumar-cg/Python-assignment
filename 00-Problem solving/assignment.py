@@ -481,3 +481,6 @@ elif not 75<=attendance_percentage<=100:
     print("Scholarship Rejected \nReason: attendance is less than 75%")      
 else:
     print("Enter valid values")
+
+
+
