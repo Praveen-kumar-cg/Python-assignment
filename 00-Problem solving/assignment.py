@@ -209,7 +209,7 @@ else:
 print("Output for Question 16.................................................")
 unit=int(input("enter your units:-"))
 if unit>200:
-    print((unit-200)*10+200*7+100*5)
+    print((unit-200)*10+100*7+100*5)
 elif unit>100 and unit<=200:
     print((unit-100)*7+100*5)
 else:

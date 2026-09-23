@@ -258,12 +258,95 @@
 
 
 
-#11. Username Analyzer
-is_length=False
-user_name=input("enter username:-")
-length=len(user_name)
-for ch in user_name:
-    first_char=ch[0]
-    print(first_char)
+# #11. Username Analyzer
+# for i in range(5):
+#     is_length=False
+#     is_first_char=False
+#     digit_count=0
+#     is_digit=False
+#     is_underscore=False
+#     count_underscore=0
+#     is_invalid=False
+#     user_name=input("enter username:-")
+#     length=len(user_name)
+#     if length>=8:
+#         is_length=True
+#     for ch in user_name:
+#         first_char=ch[0]
+#         if chr(97)<=first_char<=chr(122):
+#             is_first_char=True
+        
+#         if chr(48)<=ch<=chr(57):
+#             digit_count+=1
+#         elif ch=="_":
+#             count_underscore+=1
+#             is_underscore=True
+#         else:
+#             is_invalid=True
+#     if digit_count<2:
+#         is_digit=False
+#     else:
+#         is_digit=True
+
+#     score_count=(int(is_length)+int(is_first_char)+int(is_digit)+int( not is_invalid)+int(is_underscore))
+#     if score_count==5:
+#         print("Valid")
+#     elif 3<=score_count<=4:
+#         print("Need improvment")
+#     else:
+#         print("Invalid!!!")
+#     print("length:",length)
+#     print("digits:",digit_count)
+#     print("underscore:",count_underscore)
+
+    
+
+# #12. Vowel-Consonant Battle
+# voval_count=0
+# a_count=e_count=i_count=o_count=u_count=0
+# cons_count=0
+# str6=input("enter an santance:-")
+# for ch in str6:
+#     if ch in "AEIOUaeiou":
+#         voval_count+=1
+#         if ch in "Aa":
+#             a_count+=1
+#         elif ch in "eE":
+#             e_count+=1
+#         elif ch in "Ii":
+#             i_count+=1
+#         elif ch in "Oo":
+#             o_count+=1
+#         else:
+#             u_count+=1
+
+#     elif "A"<=ch<="Z" or "a"<=ch<="z":
+#         cons_count+=1
+
+# if voval_count>cons_count:
+#     print("Voval-win")
+# elif voval_count<cons_count:
+#     print("consonants -win")
+# else:
+#     print("Drow")
+
+# print("A voval count is:-",a_count)
+# print("E voval count is:-",e_count)
+# print("I voval count is:-",i_count)
+# print("O voval count is:-",o_count)
+# print("u voval count is:-",u_count)
 
 
+
+#13. Electricity Bill Calculator
+for i in range(6):
+    units=int(input("Enter your units:-"))
+    total_bill=0
+    if units<=100:
+        total_bill=(units*5)
+    if units<=200:
+        total_bill=((units-100)*7)+(100*5)
+    if units<=400:
+        total_bill=((units-200)*10)+1200
+    else:
+        total_bill=((units-400)*15)+3200
