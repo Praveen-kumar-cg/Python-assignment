@@ -338,15 +338,362 @@
 
 
 
-#13. Electricity Bill Calculator
-for i in range(6):
-    units=int(input("Enter your units:-"))
-    total_bill=0
-    if units<=100:
-        total_bill=(units*5)
-    if units<=200:
-        total_bill=((units-100)*7)+(100*5)
-    if units<=400:
-        total_bill=((units-200)*10)+1200
+# #13. Electricity Bill Calculator
+# for i in range(6):
+#     units=int(input("Enter your units:-"))
+#     total_bill=0
+#     if units<=100:
+#         total_bill=(units*5)
+#     if units<=200:
+#         total_bill=((units-100)*7)+500
+#     if units<=400:
+#         total_bill=((units-200)*10)+1200
+#     else:
+#         total_bill=((units-400)*15)+3200
+    
+#     if total_bill<1000:
+#         print("Low")
+#     elif 1000<=total_bill<=3000:
+#         print("Medium")
+#     else:
+#         print("High")
+#     print("The totka bill amount is -",total_bill)
+
+
+
+# #14. Word Character Balance
+
+# str7=input("enter an santance:-").split()
+# length=len(str7)
+# for word in str7:
+#     voval_count=0
+#     consonent_count=0
+#     for ch in word:
+#         if ch in "AEIOUaeiou":
+#             voval_count+=1
+#         elif "A"<=ch<="Z" or "a"<=ch<="z":
+#             consonent_count+=1
+#     if voval_count>consonent_count:
+#         print("voval heavy")
+#     elif voval_count<consonent_count:
+#         print("consonent heavy")
+#     else:
+#         print("balanced")
+#     print(f"For the word -{word}- the number of voval are {voval_count}")
+#     print(f"For the word -{word}-the number of consonents are {consonent_count}")
+        
+
+# #15. Matrix Value Analyzer
+# even_count=0
+# odd_count=0
+# positive_count=0
+# negative_count=0
+# zero_count=0
+# largest=None
+# for row in range(1,4):
+#     for coloum in range(1,4):
+#         num=int(input(f"Enter number for position {row}*{coloum} :-"))
+#         if num%2==0:
+#             print(num,">=is even",end=" ")
+#             even_count+=1
+#         else:
+#             print(num,">=is odd",end=" ")
+#             odd_count+=1
+#         if num>0:
+#             print("and positive")
+#             positive_count+=1
+#         elif num<0:
+#             print("and negative")
+#             negative_count+=1
+#         else:
+#             print("and zero")
+#             zero_count+=1
+#         if largest is None:
+#             largest = num
+#         elif num > largest:
+#             largest = num
+# print("The even count is ",even_count)
+# print("The odd count is ",odd_count)
+# print("The positive count is ",positive_count)
+# print("The negative count is ",negative_count)
+# print("The zero count is ",zero_count)
+# print("The largest number is ",largest)
+
+
+
+# #16. Password Character Distribution
+# Password=input("enter an password:-")
+# length=len(Password)
+# voval_count=0
+# consonent_count=0
+# digit_count=0
+# special_count=0
+# for ch in Password:
+#     if ch in "AEIOUaeiou":
+#         voval_count+=1
+#     elif "A"<=ch<="Z" or "a"<=ch<="z":
+#         consonent_count+=1
+#     elif chr(48)<=ch<=chr(57):
+#         digit_count+=1
+#     else:
+#         special_count+=1
+
+
+# voval_percantage=(voval_count*100)/length
+# consonent_percantage=(consonent_count*100)/length
+# digit_percantage=(digit_count*100)/length
+# special_percantage=(special_count*100)/length
+# if voval_percantage>consonent_percantage and voval_percantage>digit_percantage and voval_percantage>special_percantage:
+#     print("voval category domenance")
+# elif consonent_percantage>voval_percantage and consonent_percantage>digit_percantage and consonent_percantage>special_percantage:
+#     print("consonent category dominanec")
+# elif digit_percantage>voval_percantage and digit_percantage> consonent_percantage and digit_percantage>special_percantage:
+#     print("digit catogery dominance")
+# elif special_percantage>voval_percantage and special_percantage>consonent_percantage and special_percantage>digit_percantage:
+#     print("specal count category")
+# else:
+#     print("tie")
+
+
+# # 17. Student Name and Marks
+# highest=0
+# topper=""
+# for i in range(5):
+#     voval_count=0
+#     consonent_count=0
+#     student_name=input("Enter your name:-")
+#     marks=int(input("Enter the marks:-"))
+#     if marks<0 or marks>100:
+#         print("please enter an valid marks:-")
+#     else:
+#         length=len(student_name)
+#         for ch in student_name:
+#             if ch in "AEIOUaeiou":
+#                 voval_count+=1
+#             elif "A"<=ch<="Z" or "a"<=ch<="z":
+#                 consonent_count+=1
+#         if marks>=90:
+#             print("A")
+#         elif 80<=marks<=89:
+#             print("B")
+#         elif 70<=marks<=79:
+#             print("C")
+#         elif 60<=marks<=69:
+#             print("D")
+#         elif 50<=marks<=59:
+#             print("E")
+#         else:
+#             print("F")
+#     if marks>highest:
+#         highest=marks 
+#         topper=student_name
+# print("The highest marks of  class is ",topper,"and the marks are ",highest)        
+
+
+# #18. ATM Transaction Analyzer
+# initial_balance=20000
+# transaction_count=0
+# for i in range(7):
+#     deposit=int(input("Enter the your deposit amount:-"))
+#     withdrawal=int(input("Enter the withdrawal amount:-"))
+#     if deposit:
+#         initial_balance+=deposit
+#         transaction_count+=1
+#     if withdrawal:
+#         if withdrawal>initial_balance:
+#             print("Balance is insufficient!!")
+#         elif initial_balance<1000:
+#             print("low balance,no withdrowal")
+#         else:
+#             initial_balance-=withdrawal
+#             transaction_count+=1
+        
+# print("the final amount in the account is ",initial_balance)
+# print("the number of transaction count",transaction_count)
+
+
+# # 19. Sentence Security Scanner
+# is_digit=False
+# url_like_txt=False
+# at_the_rate=False
+# special_char=False
+# pass_patern=False
+# para=input("enter an sentance :-")
+# for ch in para:
+#     if chr(48)<=ch<=chr(57):
+#         is_digit=True
+#     elif "A"<=ch<="Z" or "a"<=ch<="z":
+#         pass_patern=True
+#     elif ch==".":                                                                                               //dought in this question about pass like pattern
+#         url_like_txt=True
+#     elif ch=="@":
+#         at_the_rate=True
+#     else:
+#         special_char=True
+
+# count=(int(is_digit)+int(url_like_txt)+int(at_the_rate)+int(special_char)+int(pass_patern))
+# if count==5:
+#     print("Safe")
+# elif 3<=count<=4:
+#     print("Review")
+# else:
+#     print("Suspicious")
+
+
+
+# #20. Multiplication Grid Analyzer
+# n=int(input("enter an number for grid:-"))
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         grid=i*j
+#         if grid%5==0:
+#             print("F",end=" ")
+#         elif grid%2==0:
+#             print("E",end=" ")
+#         else:
+#             print("O",end=" ")
+#     print()
+
+
+# #21. Shopping Discount System
+# total_bill=0
+# final_price=0
+# total_discount=0
+# count_discount_20=0
+# count_discount_15=0
+# count_discount_10=0
+# count_no_discount=0
+# for i in range(10):
+#     prodect_price=float(input("enter the product price:-"))
+#     total_bill+=prodect_price
+#     if prodect_price>=5000:
+#         discount_price=(prodect_price*0.2)
+#         final_price+=prodect_price-discount_price
+#         total_discount+=discount_price
+#         count_discount_20+=1
+#     elif prodect_price>=3000:
+#         discount_price=(prodect_price*0.15)
+#         final_price+=prodect_price-discount_price
+#         total_discount+=discount_price
+#         count_discount_15+=1
+#     elif prodect_price>=1000:
+#         discount_price=(prodect_price*0.1)
+#         final_price+=prodect_price-discount_price
+#         total_discount+=discount_price
+#         count_discount_10+=1
+#     else:
+#         discount_price=0
+#         final_price+=prodect_price-discount_price
+#         total_discount+=discount_price
+#         count_no_discount+=1
+# print("The total price of product is",total_bill)
+# print("The final price of the all product is ",final_price)
+# print("the total discount applyed to all product ",total_discount)
+# print("20% discount count is ",count_discount_20)
+# print("15% discount count is ",count_discount_15)
+# print("10% discount count is ",count_discount_10)
+# print("0% discount count is ",count_no_discount)
+
+
+
+# #22. String Compression Counter
+# str=input("enter an string with repeted later:-")
+# for ch in str:
+#     ch_count=0
+#     for nch in str:                                                              # dought the character repete more than 1 time
+#         if ch==nch:
+#             ch_count+=1
+#     print(f"ch,ch_count",end="")
+# sentence = input("Enter sentence:")
+
+#laya hua code
+# a=0
+# for i in sentence:
+#     count = 0
+#     for j in sentence:
+#         if i==j:
+#             count += 1
+#     already_printed = False
+#     for k in range(a):  
+#         if i == sentence[k]:
+#             already_printed = True 
+#     a+=1                           
+#     if count > 1 and not already_printed:
+#         print(i+str(count),end="")
+
+
+# #23. Employee Salary Analyzer
+# total_salary=0
+# junior_count=0
+# mid_count=0
+# senior_count=0
+# executive_count=0
+# for i in range(8):
+#     salaries=int(input("enter your salary:-"))
+#     total_salary+=salaries
+#     if salaries<25000:
+#         print("Junior")
+#         junior_count+=1
+#     elif 25000<=salaries<=50000:
+#         print("Mid")
+#         mid_count+=1
+#     elif 50001<=salaries<=100000:
+#         print("Senior")
+#         senior_count+=1
+#     else:
+#         print("executive")
+#         executive_count+=1
+# average_salary=total_salary/8
+# print("The junior count is",junior_count)
+# print("The mid count is",mid_count)
+# print("The senior count is",senior_count)
+# print("The executive count is",executive_count)
+# print("the average salary of all member is ",average_salary)
+
+
+# #24. Secret Word Detector
+# str=input("Enter an santance and decrate word:-").split()
+# secrate_word="pointbreak"
+# for ch in str:
+#     for i in secrate_word:
+#         present=ch
+    
+
+
+
+# #46. Number Box Pattern
+# n=int(input("enter an number:-"))
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if i==1 or i==n:
+#             print("*",end=" ")
+#         else:
+#             if j==1 or j==n:
+#                 print("*",end=" ")
+#             elif j%2==0:
+#                 print("E",end=" ")
+#             else:
+#                 print("O",end=" ")
+#     print()
+
+
+#47. Inventory Analyzer
+out_of_stock_count=0
+critical_count=0
+low_count=0
+available_count=0
+for i in range(8):
+    quantity=int(input("enter the quantity of product:-"))
+    if quantity==0:
+        print("Out of stock")
+        out_of_stock_count+=1
+    elif 1<=quantity<=5:
+        print("Critical")
+        critical_count+=1
+    elif 6<=quantity<=20:
+        print("Low")
+        low_count+=1
     else:
-        total_bill=((units-400)*15)+3200
+        print("Available")
+        available_count+=1
+if out_of_stock_count>critical_count and out_of_stock_count
