@@ -215,47 +215,47 @@ match number:
 
 #Set 5 — Match-Case with Input
 
-# #Q17
-# choice = int(input("Enter choice: "))
-# match choice:
-#     case 1:
-#         print("Add")
-#     case 2:
-#         print("Delete")
-#     case 3:
-#         print("Update")
-#     case _:
-#         print("Invalid")
+#Q17
+choice = int(input("Enter choice: "))
+match choice:
+    case 1:
+        print("Add")
+    case 2:
+        print("Delete")
+    case 3:
+        print("Update")
+    case _:
+        print("Invalid")
 
-# #Q18
-# choice = int(input("Enter choice: "))
+#Q18
+choice = int(input("Enter choice: "))
 
-# match choice:
-#     case 1:
-#         print("Login")
-#     case 2:
-#         print("Register")
-#     case 3:
-#         print("Profile")
-#     case _:
-#         print("Invalid Option")
+match choice:
+    case 1:
+        print("Login")
+    case 2:
+        print("Register")
+    case 3:
+        print("Profile")
+    case _:
+        print("Invalid Option")
 
-# #Q19
-# day = int(input("Enter day: "))
+#Q19
+day = int(input("Enter day: "))
 
-# match day:
-#     case 1:
-#         print("Monday")
-#     case 2:
-#         print("Tuesday")
-#     case 3:
-#         print("Wednesday")
-#     case 4:
-#         print("Thursday")
-#     case 5:
-#         print("Friday")
-#     case _:
-#         print("Weekend or Invalid")
+match day:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")
+    case 3:
+        print("Wednesday")
+    case 4:
+        print("Thursday")
+    case 5:
+        print("Friday")
+    case _:
+        print("Weekend or Invalid")
 
 #Set 6 — Multiple Print Statements
 
