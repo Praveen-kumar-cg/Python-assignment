@@ -696,4 +696,4 @@ for i in range(8):
     else:
         print("Available")
         available_count+=1
-if out_of_stock_count>critical_count and out_of_stock_count
+# if out_of_stock_count>critical_count and out_of_stock_count
