@@ -70,18 +70,6 @@ def outter():
 outter()
 
 
-# Q10
-def get_numbers():
-    return [10, 20, 30, 40]
-
-numbers = get_numbers()
-
-print("Original list:", numbers)
-
-numbers.append(50)
-numbers[0] = 100
-
-print("Modified list:", numbers)
 
 
 
